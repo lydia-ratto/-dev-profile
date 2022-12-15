@@ -1,12 +1,57 @@
-.navbar-lewagon {
+.nav {
+  display: flex;
   justify-content: space-between;
-  background: white;
+  width: 90%;
+  border-radius: 4px;
+  box-shadow: 1px, 1px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  height: 70px;
+  margin: 100px auto 20px auto;
+  p {
+    align-self: center;
+    font-size: 20px;
+    font-weight: 400;
+  }
+  a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
-.navbar-lewagon .navbar-collapse {
+.nav .nav-collapse {
   flex-grow: 0;
 }
 
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.nav-right {
+  display: flex;
+  p {
+    padding: 14px 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav a:not(:first-child) {display: none;}
+  .nav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .nav.responsive {position: relative;}
+  .nav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .nav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+
+.nav .icon {
+  display: none;
 }

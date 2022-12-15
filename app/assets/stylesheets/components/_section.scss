@@ -1,0 +1,37 @@
+.section.home, .projects, .about, .contact {
+  background-image: url('yellow-brush.png');
+  background-size: 25%;
+  background-repeat: no-repeat;
+  padding: 80px 0;
+}
+
+.section.projects {
+  background-position: 650px 100px;
+  background-size: 30%;
+  h1 {
+    font-size: 80px;
+  }
+  .section-content {
+    align-items: center;
+  }
+}
+
+.section.about {
+  background-position: right;
+}
+
+.section-content {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 85%;
+}
+
+.inner-text {
+  padding: 50px 50px;
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+}
