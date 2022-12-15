@@ -1,2 +1,94 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="section home">
+  <div class="section-content">
+    <div class="section-text">
+      <h1>Lydia Ratto</h1>
+      <div class="inner-text">
+        <p>Hey I'm Lydia,
+        <br>
+        a <strong>full-stack developer</strong> based in London.
+        <br>
+        Find out about me and my work. If you like what you see, feel free to reach out!</p>
+        <br>
+        <br>
+        <br>
+        <a href="#contact" class="button" data-controller="scroll-to">Get in touch</a>
+      </div>
+    </div>
+    <div class="img">
+    <%= image_tag('lydia-logo.png', class: "img-circle medium") %>
+    </div>
+  </div>
+</div>
+<div class="section projects" id="projects">
+  <div class="section-content">
+      <div class="section-text" data-controller="projects-reveal">
+        <h1>Projects</h1>
+        <div class="inner-text">
+          <p>Discover some of my work</p>
+        </div>
+        <div class="banner-box" data-action="click->projects-reveal#reveal">
+          <div class="banner" style="background-image: url(<%= asset_path 'walkin.png' %>)"></div>
+          <div class="banner-text">WalkIn</div>
+          <div class="project-text hidden" data-projects-reveal-target="banner">
+            <div class="project-langs">
+            <ul>
+              <li>Ruby</li>
+              <li>Html</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+            </ul>
+            </div>
+            <div class="project-info">
+              <p>A last minute restaurant booking service.
+                Users can easily find restaurants in a given area and filter according to their needs and preferences.
+                Users also have the option to favourite restaurants and see their bookings on their profile.
+              </p>
+              <a href="http://walk--in.herokuapp.com/" target="_blank">Visit WalkIn <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="banner-box">
+          <div class="banner" style="background-image: url(<%= asset_path 'sugo.png' %>)"></div>
+          <div class="banner-text">Sugo</div>
+        </div>
+        <div class="banner-box">
+          <div class="banner" style="background-image: url(<%= asset_path 'airbnb.png' %>)"></div>
+          <div class="banner-text">Air BroomNBroom</div>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="section about" id="about">
+  <div class="section-content">
+    <div class="section-text">
+      <h1>About me</h1>
+      <div class="inner-text">
+        <p>I love to combine logic and creativity.</p></p>
+        <br>
+        <p>When I’m not on my laptop I enjoy arts and craft projects, learning languages and hiking.</p>
+      </div>
+    </div>
+    <div class="img">
+    <%= image_tag('lydia-photo.jpg', class: "img-circle medium") %>
+    </div>
+  </div>
+</div>
+<div class="section contact" id="contact">
+  <div class="section-content">
+    <div class="section-text">
+      <h1>Contact</h1>
+      <div class="inner-text">
+        <p>email: lydiaratto@gmail.com
+        <br>
+        phone: 07 727 194 593 </p>
+      </div>
+    </div>
+    <div class="icon-section">
+      <h2>Find me on:</h2>
+      <div class="section-content">
+        <a href=""><i class="fa-brands fa-github"></i></a>
+        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+</div>

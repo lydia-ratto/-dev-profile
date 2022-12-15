@@ -1,0 +1,75 @@
+.banner-box {
+  position: relative;
+  width: 40rem;
+}
+
+.banner {
+  z-index: 0;
+  height: 15rem;
+  background-size: cover;
+  margin-bottom: 60px;
+  opacity: 0.85;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.banner-text {
+  z-index: 3;
+  color: white;
+  font-size: 40px;
+  font-weight: 500;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  display: none;
+}
+
+.banner-box:hover {
+
+  .banner {
+    filter: brightness(40%);
+  }
+  .banner-text {
+    display: block;
+  }
+}
+
+.banner-box:active {
+
+}
+
+.hidden {
+  display: none;
+}
+
+.project-text {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+ul {
+  list-style-type: none;
+  li {
+    font-weight: 400;
+    font-size: 28px;
+    color: inherit;
+  }
+}
+
+.project-langs {
+  color: #FFD752;
+}
+
+.project-info {
+  padding-left: 35px;
+
+  a {
+    color: #FFD752;
+    font-weight: 400;
+    font-size: 28px;
+    text-decoration: none;
+  }
+}

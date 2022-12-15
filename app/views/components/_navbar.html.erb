@@ -1,0 +1,21 @@
+<div class="nav" id="myNav">
+  <p><%= link_to "Home", root_path %></p>
+  <div class="nav-right">
+  <p><%= link_to "Projects", projects_path %></p>
+  <p><%= link_to "About", about_path %></p>
+  <p><%= link_to "Contact", contact_path %></p>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i></a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myNav");
+  if (x.className === "nav") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+</script>
