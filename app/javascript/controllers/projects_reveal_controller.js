@@ -1,13 +1,16 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["banner"]
+  static targets = ["banner", "image"]
   connect() {
     console.log("The 'projects reveal' controller is now loaded!")
-  }
 
-  reveal() {
-    console.log("reveal");
-    this.bannerTarget.classList.toggle("hidden");
+    const reveal = (event) => {
+      event.currentTarget.children[2].classList.toggle("hidden")
+    }
+
+    this.imageTargets.forEach(element => {
+      element.addEventListener("click", reveal)
+    });
   }
 }
