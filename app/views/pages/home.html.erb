@@ -21,74 +21,73 @@
 </div>
 <div class="section projects" id="projects">
   <div class="section-content">
-      <div class="section-text" data-controller="projects-reveal">
-        <h1>Projects</h1>
-        <div class="inner-text">
-          <p>Discover some of my work</p>
+    <div class="section-text" data-controller="projects-reveal">
+      <h1>Projects</h1>
+      <div class="inner-text">
+        <p>Discover some of my work</p>
+      </div>
+      <div class="banner-box" data-projects-reveal-target="image">
+        <div class="banner" style="background-image: url(<%= asset_path 'walkin.png' %>)"></div>
+        <div class="banner-text">WalkIn</div>
+        <div class="project-text hidden" data-projects-reveal-target="banner">
+          <div class="project-langs">
+          <ul>
+            <li>Ruby</li>
+            <li>Rails</li>
+            <li>Html</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+          </ul>
+          </div>
+          <div class="project-info">
+            <p>A mobile-first website for last minute restaurant bookings.
+              Users can easily find restaurants in a given area and filter according to their needs and preferences.
+              Users also have the option to favourite restaurants and see their bookings on their profile.
+            </p>
+            <a href="http://walk--in.herokuapp.com/" target="_blank">Visit WalkIn <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
         </div>
-        <div class="banner-box" data-action="click->projects-reveal#reveal">
-          <div class="banner" style="background-image: url(<%= asset_path 'walkin.png' %>)"></div>
-          <div class="banner-text">WalkIn</div>
+      </div>
+      <div class="banner-box" data-projects-reveal-target="image">
+        <div class="banner" style="background-image: url(<%= asset_path 'sugo.png' %>)"></div>
+        <div class="banner-text">Sugo</div>
+        <div class="project-text hidden" data-projects-reveal-target="banner">
+          <div class="project-langs">
+          <ul>
+            <li>JavaScript</li>
+            <li>Html</li>
+            <li>CSS</li>
+          </ul>
+          </div>
+          <div class="project-info">
+            <p>A time-management website using the pomodoro method. It incorporates a reminder to drink water and a 'fill-tank' to track progress.
+            </p>
+            <a href="https://lydia-ratto.github.io/sugo/" target="_blank">Visit Sugo <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="banner-box" data-projects-reveal-target="image">
+        <div class="banner" style="background-image: url(<%= asset_path 'airbnb.png' %>)"></div>
+        <div class="banner-text">Air BroomNBroom</div>
           <div class="project-text hidden" data-projects-reveal-target="banner">
             <div class="project-langs">
             <ul>
               <li>Ruby</li>
               <li>Rails</li>
-              <li>Html</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-            </ul>
-            </div>
-            <div class="project-info">
-              <p>A mobile-first website for last minute restaurant bookings.
-                Users can easily find restaurants in a given area and filter according to their needs and preferences.
-                Users also have the option to favourite restaurants and see their bookings on their profile.
-              </p>
-              <a href="http://walk--in.herokuapp.com/" target="_blank">Visit WalkIn <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-        </div>
-        <div class="banner-box" data-action="click->projects-reveal#reveal">
-          <div class="banner" style="background-image: url(<%= asset_path 'sugo.png' %>)"></div>
-          <div class="banner-text">Sugo</div>
-          <div class="project-text hidden" data-projects-reveal-target="banner">
-            <div class="project-langs">
-            <ul>
               <li>JavaScript</li>
               <li>Html</li>
               <li>CSS</li>
             </ul>
-            </div>
-            <div class="project-info">
-              <p>A time-management website using the pomodoro method. It incorporates a reminder to drink water and a 'fill-tank' to track progress.
-              </p>
-              <a href="https://lydia-ratto.github.io/sugo/" target="_blank">Visit Sugo <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
           </div>
-        </div>
-        <div class="banner-box">
-          <div class="banner" style="background-image: url(<%= asset_path 'airbnb.png' %>)"></div>
-          <div class="banner-text">Air BroomNBroom</div>
-            <div class="project-text hidden" data-projects-reveal-target="banner">
-              <div class="project-langs">
-              <ul>
-                <li>Ruby</li>
-                <li>Rails</li>
-                <li>JavaScript</li>
-                <li>Html</li>
-                <li>CSS</li>
-              </ul>
-            </div>
-            <div class="project-info">
-              <p>An Air BnB style website where users can hire and rent out broomsticks. Users can see their bookings on their profile page. If they are renting out products, they can also choose to accept or decline a booking request.
-              </p>
-              <a href="https://airbnb-yasbrown.herokuapp.com/" target="_blank">Visit Air Broom N Broom <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
+          <div class="project-info">
+            <p>An Air BnB style website where users can hire and rent out broomsticks. Users can see their bookings on their profile page. If they are renting out products, they can also choose to accept or decline a booking request.
+            </p>
+            <a href="https://airbnb-yasbrown.herokuapp.com/" target="_blank">Visit Air Broom N Broom <i class="fa-solid fa-arrow-right"></i></a>
           </div>
-        </div>
         </div>
       </div>
     </div>
+  </div>
 </div>
 <div class="section about" id="about">
   <div class="section-content">
