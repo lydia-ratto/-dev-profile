@@ -27,6 +27,10 @@
   display: none;
 }
 
+div.hidden {
+  display: none;
+}
+
 .banner-box:hover {
 
   .banner {
@@ -41,9 +45,7 @@
 
 }
 
-.hidden {
-  display: none;
-}
+
 
 .project-text {
   display: flex;
