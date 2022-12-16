@@ -8,6 +8,6 @@ export default class extends Controller {
 
   reveal() {
     console.log("reveal");
-    this.bannerTarget.classList.remove("hidden");
+    this.bannerTarget.classList.toggle("hidden");
   }
 }
