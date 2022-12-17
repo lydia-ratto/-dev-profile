@@ -27,8 +27,10 @@
         <p>Discover some of my work</p>
       </div>
       <div class="banner-box" data-projects-reveal-target="image">
-        <div class="banner" style="background-image: url(<%= asset_path 'walkin.png' %>)"></div>
-        <div class="banner-text">WalkIn</div>
+        <%= image_tag('walkin.png', class: "banner") %>
+        <div class="banner-overlay">
+          <div class="banner-text">WalkIn</div>
+        </div>
         <div class="project-text hidden" data-projects-reveal-target="banner">
           <div class="project-langs">
           <ul>
@@ -49,8 +51,10 @@
         </div>
       </div>
       <div class="banner-box" data-projects-reveal-target="image">
-        <div class="banner" style="background-image: url(<%= asset_path 'sugo.png' %>)"></div>
-        <div class="banner-text">Sugo</div>
+        <%= image_tag('sugo.png', class: "banner") %>
+        <div class="banner-overlay">
+          <div class="banner-text">Sugo</div>
+        </div>
         <div class="project-text hidden" data-projects-reveal-target="banner">
           <div class="project-langs">
           <ul>
@@ -67,8 +71,10 @@
         </div>
       </div>
       <div class="banner-box" data-projects-reveal-target="image">
-        <div class="banner" style="background-image: url(<%= asset_path 'airbnb.png' %>)"></div>
-        <div class="banner-text">Air BroomNBroom</div>
+        <%= image_tag('airbnb.png', class: "banner") %>
+        <div class="banner-overlay">
+          <div class="banner-text">Air BroomNBroom</div>
+        </div>
           <div class="project-text hidden" data-projects-reveal-target="banner">
             <div class="project-langs">
             <ul>
