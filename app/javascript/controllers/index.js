@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import ProjectsRevealController from "./projects_reveal_controller"
 application.register("projects-reveal", ProjectsRevealController)
+
+import LineScrollController from "./line_scroll_controller"
+application.register("line-scroll", LineScrollController)
