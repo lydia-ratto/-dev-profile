@@ -1,9 +1,9 @@
 <div class="nav" id="myNav">
-  <p><%= link_to "Home", root_path %></p>
+  <a href="#home" data-controller="scroll-to">Home</a>
   <div class="nav-right">
-  <p><%= link_to "Projects", projects_path %></p>
-  <p><%= link_to "About", about_path %></p>
-  <p><%= link_to "Contact", contact_path %></p>
+  <a href="#projects" data-controller="scroll-to">Projects</a>
+  <a href="#about" data-controller="scroll-to">about</a>
+  <a href="#contact" data-controller="scroll-to">contact</a>
   <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i></a>
   </div>
