@@ -6,7 +6,9 @@ export default class extends Controller {
     console.log("The 'projects reveal' controller is now loaded!")
 
     const reveal = (event) => {
-      event.currentTarget.children[2].classList.toggle("hidden")
+      event.currentTarget.children[3].classList.toggle("hidden")
+      // event.currentTarget.children[1].classList.toggle("active")
+
     }
 
     this.imageTargets.forEach(element => {
