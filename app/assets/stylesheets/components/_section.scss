@@ -1,3 +1,4 @@
+
 .section.home, .projects, .about, .contact {
   background-image: url('yellow-brush.png');
   background-size: 25%;
@@ -8,6 +9,7 @@
 .section.projects {
   background-position: 650px 100px;
   background-size: 30%;
+  display: block;
   h1 {
     font-size: 80px;
   }
@@ -34,4 +36,20 @@
 .img {
   display: flex;
   justify-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    .section-content {
+      justify-content: normal;
+    }
+  }
+  .section.home, .about {
+    .section-content {
+    flex-direction: column-reverse;
+    }
+    .img {
+      margin-bottom: 5rem;
+    }
+  }
 }

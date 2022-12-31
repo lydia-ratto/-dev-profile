@@ -12,3 +12,9 @@ svg {
   display: inline-block;
   height: 100%;
 }
+
+@media screen and (max-width: 600px) {
+  .line-container {
+    display: none;
+  }
+}
