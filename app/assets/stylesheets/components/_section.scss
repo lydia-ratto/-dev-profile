@@ -14,7 +14,11 @@
     font-size: 80px;
   }
   .section-content {
+    flex-direction: column;
     align-items: center;
+  }
+  .section-text {
+    width: 100%;
   }
 }
 
@@ -26,7 +30,6 @@
   display: flex;
   justify-content: space-around;
   margin: 20px auto;
-  width: 85%;
 }
 
 .inner-text {
@@ -50,6 +53,16 @@
     }
     .img {
       margin-bottom: 5rem;
+    }
+  }
+  .section.projects {
+    h1 {
+      font-size: 60px;
+    }
+  }
+  .section.contact {
+    .section-content {
+    flex-direction: column;
     }
   }
 }

@@ -1,7 +1,8 @@
 .banner-box {
   position: relative;
-  width: 90%;
-  margin-bottom: 50px;
+  max-width: 600px;
+  width: 100%;
+  margin: 0 auto 50px auto;
 }
 
 .banner {
@@ -21,7 +22,7 @@
   cursor: pointer;
   transition: 0.2s;
   display: block;
-  width: 40rem;
+  width: 100%;
 }
 
 .banner-overlay {
@@ -73,6 +74,8 @@ ul {
 
 .project-langs {
   color: #FFD752;
+  font-weight: 400;
+  font-size: 28px;
 }
 
 .project-info {
@@ -83,5 +86,16 @@ ul {
     font-weight: 400;
     font-size: 28px;
     text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .project-text {
+    flex-direction: column;
+  }
+  .project-langs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-left: 35px;
   }
 }
